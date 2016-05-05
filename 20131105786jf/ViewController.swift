@@ -13,7 +13,32 @@ class ViewController: UIViewController {
     
     @IBOutlet var txtUname: UITextField!
     @IBOutlet var txtMobile: UITextField!
-    
+    var a=0
+    var b=0
+    @IBAction func one(sender: UIButton) {
+        a=a+1
+        txtUname.text=("\(a)")
+    }
+    @IBAction func two(sender: UIButton) {
+        a=a+2
+        txtUname.text=("\(a)")
+    }
+    @IBAction func three(sender: UIButton) {
+        a=a+3
+        txtUname.text=("\(a)")
+    }
+    @IBAction func one1(sender: UIButton) {
+        b=b+1
+        txtMobile.text=("\(b)")
+    }
+    @IBAction func two1(sender: UIButton) {
+        b=b+2
+        txtMobile.text=("\(b)")
+    }
+    @IBAction func three3(sender: UIButton) {
+        b=b+3
+        txtMobile.text=("\(b)")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
