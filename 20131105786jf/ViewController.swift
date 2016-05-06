@@ -10,34 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
     var db:SQLiteDB!
-    
-    @IBOutlet var txtUname: UITextField!
-    @IBOutlet var txtMobile: UITextField!
+
+    @IBOutlet weak var text2: UITextField!
+
+    @IBOutlet weak var text1: UITextField!
     var a=0
     var b=0
     @IBAction func one(sender: UIButton) {
         a=a+1
-        txtUname.text=("\(a)")
+        text1.text=("\(a)")
     }
     @IBAction func two(sender: UIButton) {
         a=a+2
-        txtUname.text=("\(a)")
+        text1.text=("\(a)")
     }
     @IBAction func three(sender: UIButton) {
         a=a+3
-        txtUname.text=("\(a)")
+        text1.text=("\(a)")
     }
     @IBAction func one1(sender: UIButton) {
         b=b+1
-        txtMobile.text=("\(b)")
+        text2.text=("\(b)")
     }
     @IBAction func two1(sender: UIButton) {
         b=b+2
-        txtMobile.text=("\(b)")
+        text2.text=("\(b)")
     }
     @IBAction func three3(sender: UIButton) {
         b=b+3
-        txtMobile.text=("\(b)")
+        text2.text=("\(b)")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,15 +62,15 @@ class ViewController: UIViewController {
         if data.count > 0 {
             //获取最后一行数据显示
             let user = data[data.count - 1]
-            txtUname.text = user["uname"] as? String
-            txtMobile.text = user["mobile"] as? String
+            text1.text = user["uname"] as? String
+            text1.text = user["mobile"] as? String
         }
     }
     
     //保存数据到SQLite
     func saveUser() {
-        let uname = self.txtUname.text!
-        let mobile = self.txtMobile.text!
+        let uname = self.text1.text!
+        let mobile = self.text1.text!
         //插入数据库，这里用到了esc字符编码函数，其实是调用bridge.m实现的
         let sql = "insert into t_user(uname,mobile) values('\(uname)','\(mobile)')"
         print("sql: \(sql)")

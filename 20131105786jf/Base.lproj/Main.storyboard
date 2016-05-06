@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fOc-kb-7fb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="1s0-RN-EZR">
+            <objects>
+                <viewController id="hAG-9b-nim" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e03-Bv-JbS"/>
+                        <viewControllerLayoutGuide type="bottom" id="DOU-ja-iIc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uyh-Oe-r8n" colorLabel="IBBuiltInLabel-Yellow">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpe-Ki-LbW">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="fOc-kb-7fb" kind="modal" id="fMu-mF-XSI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIx-CA-3zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="-356"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -20,7 +47,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-XZ-Pkq">
                                 <rect key="frame" x="30" y="120" width="12" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PpZ-p9-TPJ">
@@ -38,12 +65,14 @@
                                 <state key="normal" title="+1"/>
                                 <connections>
                                     <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHm-5k-EYK"/>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuR-dE-tAh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rm-nn-0Iw">
                                 <rect key="frame" x="82" y="286" width="30" height="30"/>
                                 <state key="normal" title="+2"/>
                                 <connections>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpZ-0o-GWh"/>
                                     <action selector="two:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwG-6H-mYv"/>
                                 </connections>
                             </button>
@@ -51,6 +80,7 @@
                                 <rect key="frame" x="82" y="397" width="30" height="30"/>
                                 <state key="normal" title="+3"/>
                                 <connections>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZ4-KI-oUq"/>
                                     <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSH-Ox-Nbb"/>
                                 </connections>
                             </button>
@@ -59,12 +89,14 @@
                                 <state key="normal" title="+1"/>
                                 <connections>
                                     <action selector="one1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyF-Pt-0E0"/>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYO-Tj-fqb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5Z-Ei-BYS">
                                 <rect key="frame" x="185" y="286" width="30" height="30"/>
                                 <state key="normal" title="+2"/>
                                 <connections>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvm-4A-mSS"/>
                                     <action selector="two1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98a-my-fcm"/>
                                 </connections>
                             </button>
@@ -72,33 +104,78 @@
                                 <rect key="frame" x="185" y="397" width="30" height="30"/>
                                 <state key="normal" title="+3"/>
                                 <connections>
+                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVj-Me-UJn"/>
                                     <action selector="three3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyu-Wl-vlo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdQ-96-Rk1">
-                                <rect key="frame" x="137" y="472" width="32" height="30"/>
-                                <state key="normal" title="save"/>
-                                <connections>
-                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUt-4g-C7Y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-4P-IUo">
                                 <rect key="frame" x="265" y="120" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da5-FP-ocn">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="fOc-kb-7fb" kind="modal" id="db0-L4-YIE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="txtMobile" destination="T2h-io-DlU" id="Tqt-wD-NJd"/>
-                        <outlet property="txtUname" destination="PpZ-p9-TPJ" id="Bnw-fd-vK5"/>
+                        <outlet property="text1" destination="PpZ-p9-TPJ" id="cl3-Az-so8"/>
+                        <outlet property="text2" destination="T2h-io-DlU" id="NCo-2S-ctt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205" y="282"/>
+            <point key="canvasLocation" x="375" y="257"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LKC-e7-BwU">
+            <objects>
+                <viewController id="fOc-kb-7fb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xwc-uc-hDS"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Jo-Nn-l8m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QIk-IZ-EcL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXu-Xn-3J2">
+                                <rect key="frame" x="218" y="175" width="30" height="30"/>
+                                <state key="normal" title="时间"/>
+                                <connections>
+                                    <segue destination="hAG-9b-nim" kind="modal" id="LZE-H0-TlG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-bk-81n">
+                                <rect key="frame" x="218" y="300" width="30" height="30"/>
+                                <state key="normal" title="计分"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="hN3-Ry-v9H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="篮球计分器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-Dc-fG5">
+                                <rect key="frame" x="118" y="33" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLo-Fu-eND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="-67"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fMu-mF-XSI"/>
+    </inferredMetricsTieBreakers>
 </document>
