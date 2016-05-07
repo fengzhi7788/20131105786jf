@@ -31,30 +31,30 @@ class jishiViewController: UIViewController {
         leftTime=x+y
         if min.text!==""&&sec.text==""
         {
-            alertView = UIAlertView()
-            alertView.title="请输入时间"
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
+//            alertView = UIAlertView()
+//            alertView.title="请输入时间"
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("请输入时间",tile:"")
         }else if min.text=="0"&&sec.text=="0"||min.text=="0"&&sec.text==""||min.text==""&&sec.text=="0"
         {
-            alertView = UIAlertView()
-            alertView.title="该时间不能倒计时"
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
+//            alertView = UIAlertView()
+//            alertView.title="该时间不能倒计时"
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("该时间不能倒计时",tile:"")
         }
         else
         {
-            startBt.setTitle("倒计时中", forState:UIControlState.Normal)
-           // startBt.setTitle(<#T##title: String?##String?#>, forState: <#T##UIControlState#>)
+            startBt.setTitle("倒计时中",forState:UIControlState.Normal)
             start=true
-            timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),
-                userInfo:nil,repeats:true)
-            alertView = UIAlertView()
-            alertView.title = "到计时开始"
-            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
-
+            timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),userInfo:nil,repeats:true)
+//            alertView = UIAlertView()
+//            alertView.title = "到计时开始"
+//            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("倒计时开始，还有 \(leftTime) 秒..",tile: "倒计时开始")
         }
     }
     
@@ -66,10 +66,11 @@ class jishiViewController: UIViewController {
             leftTime = 0
             min.text="0"
             sec.text="0"
-            alertView = UIAlertView()
-            alertView.title = "复位成功"
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
+//            alertView = UIAlertView()
+//            alertView.title = "复位成功"
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("",tile: "复位成功")
             startBt.setTitle("开始", forState: UIControlState.Normal)
         }else
         {
@@ -79,10 +80,11 @@ class jishiViewController: UIViewController {
             }
             else
             {
-                alertView = UIAlertView()
-                alertView.title = "你还没有开始计时"
-                alertView.addButtonWithTitle("确定")
-                alertView.show()
+//                alertView = UIAlertView()
+//                alertView.title = "你还没有开始计时"
+//                alertView.addButtonWithTitle("确定")
+//                alertView.show()
+                a("",tile: "你还没有开始计时")
             }
         }
     }
@@ -92,11 +94,11 @@ class jishiViewController: UIViewController {
             stoporcon.setTitle("继续", forState: UIControlState.Normal)
             //tickDown()
             start=false
-            alertView = UIAlertView()
-            alertView.message = "已经暂停，还有 \(leftTime) 秒..."
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
-            a("aaa",tile: "iii")
+//            alertView = UIAlertView()
+//            alertView.message = "已经暂停，还有 \(leftTime) 秒..."
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("已经暂停，还有 \(leftTime) 秒...",tile: "")
             
             //title=("继续",forState:UIControlState.Normal)
             timer.invalidate()
@@ -107,23 +109,23 @@ class jishiViewController: UIViewController {
             stoporcon.setTitle("暂停", forState: UIControlState.Normal)
             timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),
                 userInfo:nil,repeats:true)
-            alertView = UIAlertView()
-            alertView.title = "到计时开始"
-            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
-            alertView.addButtonWithTitle("确定")
-            alertView.show()
+//            alertView = UIAlertView()
+//            alertView.title = "到计时开始"
+//            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
+//            alertView.addButtonWithTitle("确定")
+//            alertView.show()
+            a("已经暂停，还有 \(leftTime) 秒...",tile: "到计时开始")
             start=true
         }
     }
     func tickDown()
     {
         alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
+        //a("已经暂停，还有 \(leftTime) 秒...",tile: "到计时开始")
         if !start==false
         {
             leftTime -= 1
             print(leftTime)
-            
-            
             if(leftTime <= 0)
             {
                 timer.invalidate()
