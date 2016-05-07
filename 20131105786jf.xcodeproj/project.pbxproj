@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE50C9D51CDD9A4A006F730E /* jishi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50C9D41CDD9A4A006F730E /* jishi.swift */; };
 		BEF490671CDAEA810075810F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490661CDAEA810075810F /* AppDelegate.swift */; };
 		BEF490691CDAEA810075810F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490681CDAEA810075810F /* ViewController.swift */; };
 		BEF4906C1CDAEA810075810F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF4906A1CDAEA810075810F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE50C9D41CDD9A4A006F730E /* jishi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jishi.swift; sourceTree = "<group>"; };
 		BEF490631CDAEA810075810F /* 20131105786jf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20131105786jf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF490661CDAEA810075810F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF490681CDAEA810075810F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BEF4906F1CDAEA810075810F /* LaunchScreen.storyboard */,
 				BEF490721CDAEA810075810F /* Info.plist */,
 				BEF490AB1CDAF1690075810F /* Header.h */,
+				BE50C9D41CDD9A4A006F730E /* jishi.swift */,
 			);
 			path = 20131105786jf;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				BEF490A41CDAEE930075810F /* String-Extras.swift in Sources */,
 				BEF490A21CDAEE930075810F /* SQLiteDB.swift in Sources */,
 				BEF490A31CDAEE930075810F /* SQLTable.swift in Sources */,
+				BE50C9D51CDD9A4A006F730E /* jishi.swift in Sources */,
 				BEF490691CDAEA810075810F /* ViewController.swift in Sources */,
 				BEF490671CDAEA810075810F /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +518,7 @@
 				BEF4908D1CDAEA810075810F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEF4908E1CDAEA810075810F /* Build configuration list for PBXNativeTarget "20131105786jfTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				BEF490901CDAEA810075810F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEF490911CDAEA810075810F /* Build configuration list for PBXNativeTarget "20131105786jfUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				BEF490931CDAEA810075810F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
