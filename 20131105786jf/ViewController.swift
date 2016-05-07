@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         text1.text=("\(a)")
     }
     @IBAction func two(sender: UIButton) {
+        
+        
         a=a+2
         text1.text=("\(a)")
     }
@@ -41,6 +43,14 @@ class ViewController: UIViewController {
     @IBAction func three3(sender: UIButton) {
         b=b+3
         text2.text=("\(b)")
+    }
+    @IBAction func startgame(sender: UIButton) {
+        name1.text=""
+        name2.text=""
+        text1.text="0"
+        text2.text="0"
+        a=0
+        b=0
     }
     @IBAction func exitt(sender: UIButton) {
         var x:Int32=0
@@ -72,11 +82,18 @@ class ViewController: UIViewController {
     //从SQLite加载数据
     func initUser() {
         let data = db.query("select * from score")
+        let data1 = db.query("select * from name")
         if data.count > 0 {
             //获取最后一行数据显示
             let user = data[data.count - 1]
             text1.text = user["Ascore"] as? String
             text2.text = user["Bscore"] as? String
+        }
+        if data1.count > 0 {
+            //获取最后一行数据显示
+            let user2 = data1[data1.count - 1]
+            name1.text = user2["Aname"] as? String
+            name2.text = user2["Bname"] as? String
         }
     }
     
@@ -84,8 +101,12 @@ class ViewController: UIViewController {
     func saveUser() {
         let Ascore = self.text1.text!
         let Bscore = self.text2.text!
+        let Aname = self.name1.text!
+        let Bname = self.name2.text!
         //插入数据库，这里用到了esc字符编码函数，其实是调用bridge.m实现的
-        let sql = "insert into score(Ascore,Bscore) values('\(Ascore)','\(Bscore)')"
+        let sql = "insert into name(Aname,Bname) values('\(Aname)','\(Bname)')"
+        let sql2 = "insert into score(Ascore,Bscore) values('\(Ascore)','\(Bscore)')"
+        print("sql: \(sql2)")
         print("sql: \(sql)")
         //通过封装的方法执行sql
         let result = db.execute(sql)

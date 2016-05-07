@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE50C9D51CDD9A4A006F730E /* jishi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50C9D41CDD9A4A006F730E /* jishi.swift */; };
+		BE50C9DB1CDDBC0C006F730E /* jishiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */; };
 		BEF490671CDAEA810075810F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490661CDAEA810075810F /* AppDelegate.swift */; };
 		BEF490691CDAEA810075810F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490681CDAEA810075810F /* ViewController.swift */; };
 		BEF4906C1CDAEA810075810F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF4906A1CDAEA810075810F /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		BE50C9D41CDD9A4A006F730E /* jishi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jishi.swift; sourceTree = "<group>"; };
+		BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jishiViewController.swift; sourceTree = "<group>"; };
 		BEF490631CDAEA810075810F /* 20131105786jf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20131105786jf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF490661CDAEA810075810F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF490681CDAEA810075810F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				BEF490721CDAEA810075810F /* Info.plist */,
 				BEF490AB1CDAF1690075810F /* Header.h */,
 				BE50C9D41CDD9A4A006F730E /* jishi.swift */,
+				BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */,
 			);
 			path = 20131105786jf;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE50C9DB1CDDBC0C006F730E /* jishiViewController.swift in Sources */,
 				BEF490A41CDAEE930075810F /* String-Extras.swift in Sources */,
 				BEF490A21CDAEE930075810F /* SQLiteDB.swift in Sources */,
 				BEF490A31CDAEE930075810F /* SQLTable.swift in Sources */,
