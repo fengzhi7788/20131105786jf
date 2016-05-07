@@ -21,16 +21,17 @@ class ViewController: UIViewController {
     @IBAction func one(sender: UIButton) {
         a=a+1
         text1.text=("\(a)")
+        saveUser()
     }
     @IBAction func two(sender: UIButton) {
-        
-        
         a=a+2
         text1.text=("\(a)")
+        saveUser()
     }
     @IBAction func three(sender: UIButton) {
         a=a+3
         text1.text=("\(a)")
+        saveUser()
     }
     @IBAction func one1(sender: UIButton) {
         b=b+1
