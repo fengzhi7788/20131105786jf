@@ -76,9 +76,9 @@ class ViewController: UIViewController {
     }
     
     //点击保存
-    @IBAction func saveClicked(sender: AnyObject) {
-        saveUser()
-    }
+//    @IBAction func saveClicked(sender: AnyObject) {
+//        saveUser()
+//    }
     
     //从SQLite加载数据
     func initUser() {
