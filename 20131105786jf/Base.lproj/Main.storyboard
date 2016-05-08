@@ -188,13 +188,6 @@
                                     <action selector="two:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVT-Q8-yPj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ict-Uu-45K">
-                                <rect key="frame" x="100" y="435" width="30" height="30"/>
-                                <state key="normal" title="+3"/>
-                                <connections>
-                                    <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSH-Ox-Nbb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5Z-Ei-BYS">
                                 <rect key="frame" x="203" y="324" width="30" height="30"/>
                                 <state key="normal" title="+2"/>
@@ -202,18 +195,25 @@
                                     <action selector="two1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98a-my-fcm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-1i-0Qs">
-                                <rect key="frame" x="203" y="435" width="30" height="30"/>
-                                <state key="normal" title="+3"/>
-                                <connections>
-                                    <action selector="three3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyu-Wl-vlo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNt-T3-xw4">
                                 <rect key="frame" x="203" y="239" width="30" height="30"/>
                                 <state key="normal" title="+1"/>
                                 <connections>
                                     <action selector="one1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyF-Pt-0E0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ict-Uu-45K">
+                                <rect key="frame" x="100" y="407" width="30" height="30"/>
+                                <state key="normal" title="+3"/>
+                                <connections>
+                                    <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSH-Ox-Nbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-1i-0Qs">
+                                <rect key="frame" x="203" y="407" width="30" height="30"/>
+                                <state key="normal" title="+3"/>
+                                <connections>
+                                    <action selector="three3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyu-Wl-vlo"/>
                                 </connections>
                             </button>
                         </subviews>

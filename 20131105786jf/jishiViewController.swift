@@ -11,7 +11,7 @@ import UIKit
 class jishiViewController: UIViewController {
     
     
-    
+ 
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
@@ -21,7 +21,7 @@ class jishiViewController: UIViewController {
     @IBOutlet weak var sec: UITextField!
     //定义分 ＋秒数
     var x:Int32=0
-    var y:Int32=0
+    var y:Int32=1
     //总秒
     var leftTime:Int32 = 0
 
@@ -157,7 +157,7 @@ class jishiViewController: UIViewController {
                 y=60
             }else if y==0&&x==0
             {
-                a("计时结束",tile:"")
+                a("比赛结束",tile:"")
             }
             
             label1.text=String(x/60)
@@ -182,6 +182,8 @@ class jishiViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         alertView = UIAlertView()
         
+//        let bg=UIImage(named: "lanqiu.jpg")
+//        self.view.backgroundColor=UIColor(patternImage: bg!)
 
 
     }
