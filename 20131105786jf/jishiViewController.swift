@@ -30,9 +30,7 @@ class jishiViewController: UIViewController {
     var alertView:UIAlertView!
   
     var start=false
-//    设置label分秒
-//    var lax:Int32=0
-//    var lay:Int32=0
+
     
     
     @IBAction func start(sender: UIButton) {
@@ -41,17 +39,9 @@ class jishiViewController: UIViewController {
         leftTime=x+y
         if min.text!==""&&sec.text==""
         {
-//            alertView = UIAlertView()
-//            alertView.title="请输入时间"
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
             a("请输入时间",tile:"")
         }else if min.text=="0"&&sec.text=="0"||min.text=="0"&&sec.text==""||min.text==""&&sec.text=="0"
         {
-//            alertView = UIAlertView()
-//            alertView.title="该时间不能倒计时"
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
             a("该时间不能倒计时",tile:"")
         }
         else
@@ -59,11 +49,6 @@ class jishiViewController: UIViewController {
             startBt.setTitle("倒计时中",forState:UIControlState.Normal)
             start=true
             timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),userInfo:nil,repeats:true)
-//            alertView = UIAlertView()
-//            alertView.title = "到计时开始"
-//            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
             a("倒计时开始，还有 \(leftTime) 秒..",tile: "倒计时开始")
             start=true
         }
@@ -79,10 +64,6 @@ class jishiViewController: UIViewController {
             sec.text="0"
             label1.text="0"
             label2.text="0"
-//            alertView = UIAlertView()
-//            alertView.title = "复位成功"
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
             a("",tile: "复位成功")
             startBt.setTitle("开始", forState: UIControlState.Normal)
         }else
@@ -93,10 +74,6 @@ class jishiViewController: UIViewController {
             }
             else
             {
-//                alertView = UIAlertView()
-//                alertView.title = "你还没有开始计时"
-//                alertView.addButtonWithTitle("确定")
-//                alertView.show()
                 a("",tile: "你还没有开始计时")
             }
         }
@@ -105,15 +82,8 @@ class jishiViewController: UIViewController {
         if start==true
         {
             stoporcon.setTitle("继续", forState: UIControlState.Normal)
-            //tickDown()
             start=false
-//            alertView = UIAlertView()
-//            alertView.message = "已经暂停，还有 \(leftTime) 秒..."
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
             a("已经暂停，还有 \(leftTime) 秒...",tile: "")
-            
-            //title=("继续",forState:UIControlState.Normal)
             timer.invalidate()
             
             
@@ -127,11 +97,6 @@ class jishiViewController: UIViewController {
                 stoporcon.setTitle("暂停", forState: UIControlState.Normal)
                 timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),
                 userInfo:nil,repeats:true)
-//            alertView = UIAlertView()
-//            alertView.title = "到计时开始"
-//            alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
-//            alertView.addButtonWithTitle("确定")
-//            alertView.show()
                 a("已经暂停，还有 \(leftTime) 秒...",tile: "到计时开始")
                 start=true
             }
@@ -140,7 +105,6 @@ class jishiViewController: UIViewController {
     func tickDown()
     {
         alertView.message = "倒计时开始，还有 \(leftTime) 秒..."
-        //a("已经暂停，还有 \(leftTime) 秒...",tile: "到计时开始")
         if !start==false
         {
             leftTime -= 1
@@ -149,12 +113,13 @@ class jishiViewController: UIViewController {
             {
                 timer.invalidate()
             }
-            
+
             y-=1
             if y==0&&x>0
             {
                 x=x-1
                 y=60
+                
             }else if y==0&&x==0
             {
                 a("比赛结束",tile:"")
@@ -163,6 +128,7 @@ class jishiViewController: UIViewController {
             label1.text=String(x/60)
             label2.text=String(y)
             
+          
         }else
         {
             timer.invalidate()

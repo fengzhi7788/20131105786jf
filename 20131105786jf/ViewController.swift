@@ -36,14 +36,17 @@ class ViewController: UIViewController {
     @IBAction func one1(sender: UIButton) {
         b=b+1
         text2.text=("\(b)")
+        saveUser()
     }
     @IBAction func two1(sender: UIButton) {
         b=b+2
         text2.text=("\(b)")
+        saveUser()
     }
     @IBAction func three3(sender: UIButton) {
         b=b+3
         text2.text=("\(b)")
+        saveUser()
     }
     @IBAction func startgame(sender: UIButton) {
         name1.text=""
@@ -111,6 +114,7 @@ class ViewController: UIViewController {
         print("sql: \(sql)")
         //通过封装的方法执行sql
         let result = db.execute(sql)
+        _ = db.execute(sql2)
         print(result)
     }
     

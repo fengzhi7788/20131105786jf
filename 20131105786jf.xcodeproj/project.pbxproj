@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE50C9D51CDD9A4A006F730E /* jishi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50C9D41CDD9A4A006F730E /* jishi.swift */; };
+		BE443ADF1CE0A8DD00F1AFA0 /* lanqiu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE443ADE1CE0A8DD00F1AFA0 /* lanqiu.jpg */; };
 		BE50C9DB1CDDBC0C006F730E /* jishiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */; };
 		BEF490671CDAEA810075810F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490661CDAEA810075810F /* AppDelegate.swift */; };
 		BEF490691CDAEA810075810F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF490681CDAEA810075810F /* ViewController.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE50C9D41CDD9A4A006F730E /* jishi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jishi.swift; sourceTree = "<group>"; };
+		BE443ADE1CE0A8DD00F1AFA0 /* lanqiu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lanqiu.jpg; path = ../../lanqiu.jpg; sourceTree = "<group>"; };
 		BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jishiViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		BEF490631CDAEA810075810F /* 20131105786jf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20131105786jf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF490661CDAEA810075810F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 		BEF490651CDAEA810075810F /* 20131105786jf */ = {
 			isa = PBXGroup;
 			children = (
+				BE443ADE1CE0A8DD00F1AFA0 /* lanqiu.jpg */,
 				BEF490661CDAEA810075810F /* AppDelegate.swift */,
 				BEF490681CDAEA810075810F /* ViewController.swift */,
 				BEF4906A1CDAEA810075810F /* Main.storyboard */,
@@ -123,7 +124,6 @@
 				BEF4906F1CDAEA810075810F /* LaunchScreen.storyboard */,
 				BEF490721CDAEA810075810F /* Info.plist */,
 				BEF490AB1CDAF1690075810F /* Header.h */,
-				BE50C9D41CDD9A4A006F730E /* jishi.swift */,
 				BE50C9DA1CDDBC0C006F730E /* jishiViewController.swift */,
 			);
 			path = 20131105786jf;
@@ -262,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF490711CDAEA810075810F /* LaunchScreen.storyboard in Resources */,
+				BE443ADF1CE0A8DD00F1AFA0 /* lanqiu.jpg in Resources */,
 				BEF4909C1CDAED210075810F /* data.db in Resources */,
 				BEF4906E1CDAEA810075810F /* Assets.xcassets in Resources */,
 				BEF4906C1CDAEA810075810F /* Main.storyboard in Resources */,
@@ -293,7 +294,6 @@
 				BEF490A41CDAEE930075810F /* String-Extras.swift in Sources */,
 				BEF490A21CDAEE930075810F /* SQLiteDB.swift in Sources */,
 				BEF490A31CDAEE930075810F /* SQLTable.swift in Sources */,
-				BE50C9D51CDD9A4A006F730E /* jishi.swift in Sources */,
 				BEF490691CDAEA810075810F /* ViewController.swift in Sources */,
 				BEF490671CDAEA810075810F /* AppDelegate.swift in Sources */,
 			);
