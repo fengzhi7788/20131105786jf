@@ -66,14 +66,14 @@ class teamViewController: UIViewController {
             //获取最后一行数据显示
             let user = data[data.count - 1]
             A1.text = user["Aname1"] as? String
-            B1.text = user["Aname2"] as? String
-            A2.text = user["Aname3"] as? String
-            B2.text = user["Aname4"] as? String
-            A3.text = user["Aname5"] as? String
-            B3.text = user["Bname1"] as? String
-            A4.text = user["Bname2"] as? String
-            B4.text = user["Bname3"] as? String
-            A5.text = user["Bname4"] as? String
+            B1.text = user["Bname1"] as? String
+            A2.text = user["Aname2"] as? String
+            B2.text = user["Bname2"] as? String
+            A3.text = user["Aname3"] as? String
+            B3.text = user["Bname3"] as? String
+            A4.text = user["Aname4"] as? String
+            B4.text = user["Bname4"] as? String
+            A5.text = user["Aname5"] as? String
             B5.text = user["Bname5"] as? String
         }
         if data1.count > 0 {
