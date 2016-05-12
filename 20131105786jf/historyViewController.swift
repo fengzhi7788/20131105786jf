@@ -11,57 +11,74 @@ import UIKit
 class historyViewController: UIViewController {
     var db:SQLiteDB!
     
-    
-    
     @IBOutlet weak var text: UITextView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
         //获取数据库实例
         db = SQLiteDB.sharedInstance()
         //如果表还不存在则创建表（其中uid为自增主键）
-        
         db.execute("create table if not exists turnpeople(uid integer primary key,Aname6 varchar(20),Bname6 varchar(20))")
-        
         db.execute("create table if not exists nomalpeople12(uid integer primary key,Aname1 varchar(20),Bname1 varchar(20),Aname2 varchar(20),Bname2 varchar(20),Aname3 varchar(20),Bname3 varchar(20),Aname4 varchar(20),Bname4 varchar(20),Aname5 varchar(20),Bname5 varchar(20))")
-
+        db.execute("create table if not exists score(uid integer primary key,Ascore varchar(20),Bscore varchar(20))")
+        db.execute("create table if not exists name(uid integer primary key,Aname varchar(20),Bname varchar(20))")
+    }
+    
+    @IBAction func score(sender: UIButton) {
+        initscore()
+    }
+    @IBAction func team(sender: UIButton) {
+        initteam()
+    }
+    
+    @IBAction func people2(sender: UIButton) {
+        initTurn()
+    }
+    @IBAction func people(sender: UIButton) {
+        initUser()
+    }
+    
+    func initscore()
+    {
+        let score=db.query("select * from score")
+        for var a=0;a<score.count;a++
+        {
+            let score1 = score[a]
+            text.text! += String(score1)+"\n"
+        }
+    }
+    func initteam()
+    {
+        let team=db.query("select * from name")
+        for var a=0;a<team.count;a++
+        {
+            let team1 = team[a]
+            text.text! += String(team1)+"\n"
+        }
+    }
+    func initTurn()
+    {
+        let people=db.query("select * from turnpeople")
+        for var a=0;a<people.count;a++
+        {
+            let user1 = people[a]
+            text.text! += String(user1)+"\n"
+            
+        }
         
     }
-
-    
-    @IBAction func people(sender: UIButton) {
-        initUser1()
-    }
-    //从SQLite加载数据
-    func initUser1() {
-        //let data = db.query("select * from nomalpeople12")
-        let data2=db.query("select * from nomalpeople12")
-        for var a=0;a<data2.count;a++
+    func initUser() {
+        
+        let people=db.query("select * from nomalpeople12")
+        for var a=0;a<people.count;a++
         {
-            let user = data2[a]
-            text.text = String(user)
-
+            let user1 = people[a]
+            text.text! += String(user1)+"\n"
+            
         }
-        //let data1 = db.query("select * from turnpeople")
-        //for var a=0;a<data.count;a++ {
-            //获取最后一行数据显示
-          //  let user = data[a]
-          //  text.text = user["Aname1"] as? String
-            //text.text = user[""]![""] as? String
-            //        }
-        /*if data1.count > 0 {
-            //获取最后一行数据显示
-            let user2 = data1[data1.count - 1]
-            text.text = user2["Aname6"] as? String
-            text.text = user2["Bname6"] as? String
-        }*/
+        
     }
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

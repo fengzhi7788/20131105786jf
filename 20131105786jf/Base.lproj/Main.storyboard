@@ -459,14 +459,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-uF-ETE">
                                 <rect key="frame" x="84" y="103" width="60" height="30"/>
                                 <state key="normal" title="替补队员"/>
+                                <connections>
+                                    <action selector="people2:" destination="16r-6N-U9B" eventType="touchUpInside" id="HcY-Aj-115"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiH-bj-Rs0">
                                 <rect key="frame" x="159" y="103" width="60" height="30"/>
                                 <state key="normal" title="参赛队伍"/>
+                                <connections>
+                                    <action selector="team:" destination="16r-6N-U9B" eventType="touchUpInside" id="VbS-Wb-3SD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I12-fG-FoL">
                                 <rect key="frame" x="238" y="103" width="60" height="30"/>
                                 <state key="normal" title="计分情况"/>
+                                <connections>
+                                    <action selector="score:" destination="16r-6N-U9B" eventType="touchUpInside" id="hSj-RT-AyM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
