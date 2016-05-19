@@ -114,7 +114,7 @@ class jishiViewController: UIViewController {
                 timer.invalidate()
             }
 
-            y-=1
+           
             if y==0&&x>0
             {
                 x=x-1
@@ -124,7 +124,7 @@ class jishiViewController: UIViewController {
             {
                 a("比赛结束",tile:"")
             }
-            
+            y-=1
             label1.text=String(x/60)
             label2.text=String(y)
             

@@ -20,35 +20,67 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lanqiu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5I9-ei-DI6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-vl-7Cb">
+                                <rect key="frame" x="10" y="10" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9T-wH-2wM">
+                                <rect key="frame" x="120" y="319" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERG-hw-4Rv">
+                                <rect key="frame" x="120" y="154" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJA-6N-mjh">
+                                <rect key="frame" x="287" y="154" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOa-fQ-7D2">
+                                <rect key="frame" x="290" y="207" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-Wc-3pI">
+                                <rect key="frame" x="287" y="263" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-xR-ehr">
+                                <rect key="frame" x="120" y="206" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcT-i8-new">
+                                <rect key="frame" x="120" y="262" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-B5-41o">
-                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <rect key="frame" x="73" y="37" width="30" height="30"/>
                                 <state key="normal" title="返回"/>
                                 <connections>
                                     <segue destination="fOc-kb-7fb" kind="modal" id="WTh-Zt-b9Y"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEN-i8-Vj8">
-                                <rect key="frame" x="40" y="100" width="97" height="30"/>
+                                <rect key="frame" x="23" y="100" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVr-Oe-wdF">
-                                <rect key="frame" x="40" y="154" width="97" height="30"/>
+                                <rect key="frame" x="23" y="154" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xex-tT-gRg">
-                                <rect key="frame" x="40" y="208" width="97" height="30"/>
+                                <rect key="frame" x="23" y="208" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGF-Dt-0Dz">
-                                <rect key="frame" x="40" y="263" width="97" height="30"/>
+                                <rect key="frame" x="23" y="263" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q0v-qU-YRn">
-                                <rect key="frame" x="40" y="319" width="97" height="30"/>
+                                <rect key="frame" x="23" y="319" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -144,6 +176,18 @@
                                 <connections>
                                     <action selector="clean2:" destination="3PN-jQ-gTz" eventType="touchUpInside" id="6h3-kC-gHE"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-DB-jf6">
+                                <rect key="frame" x="120" y="100" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAR-8l-3YP">
+                                <rect key="frame" x="287" y="100" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCj-ew-ud2">
+                                <rect key="frame" x="290" y="317" width="33" height="30"/>
+                                <state key="normal" title="＋"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -577,6 +621,6 @@
         <image name="lanqiu.jpg" width="1024" height="885"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fMu-mF-XSI"/>
+        <segue reference="4Ff-OV-y52"/>
     </inferredMetricsTieBreakers>
 </document>
