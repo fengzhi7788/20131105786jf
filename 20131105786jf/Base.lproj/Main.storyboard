@@ -118,17 +118,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-8U-opl">
-                                <rect key="frame" x="145" y="367" width="30" height="30"/>
+                                <rect key="frame" x="82" y="372" width="30" height="30"/>
                                 <state key="normal" title="保存"/>
                                 <connections>
                                     <action selector="save:" destination="3PN-jQ-gTz" eventType="touchUpInside" id="K4n-IB-Bhe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND4-4D-f2d">
-                                <rect key="frame" x="145" y="490" width="30" height="30"/>
+                                <rect key="frame" x="84" y="490" width="30" height="30"/>
                                 <state key="normal" title="保存"/>
                                 <connections>
                                     <action selector="save2:" destination="3PN-jQ-gTz" eventType="touchUpInside" id="3G7-G1-Uj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-79-9G2">
+                                <rect key="frame" x="201" y="372" width="30" height="30"/>
+                                <state key="normal" title="清空"/>
+                                <connections>
+                                    <action selector="clean:" destination="3PN-jQ-gTz" eventType="touchUpInside" id="xJn-uH-lQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx9-i6-HKG">
+                                <rect key="frame" x="197" y="489" width="38" height="31"/>
+                                <state key="normal" title="清空"/>
+                                <connections>
+                                    <action selector="clean2:" destination="3PN-jQ-gTz" eventType="touchUpInside" id="6h3-kC-gHE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -477,6 +491,13 @@
                                     <action selector="score:" destination="16r-6N-U9B" eventType="touchUpInside" id="hSj-RT-AyM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr6-VZ-deb">
+                                <rect key="frame" x="223" y="34" width="90" height="30"/>
+                                <state key="normal" title="清空历史记录"/>
+                                <connections>
+                                    <action selector="del:" destination="16r-6N-U9B" eventType="touchUpInside" id="T67-nv-YSB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -556,6 +577,6 @@
         <image name="lanqiu.jpg" width="1024" height="885"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Ff-OV-y52"/>
+        <segue reference="fMu-mF-XSI"/>
     </inferredMetricsTieBreakers>
 </document>

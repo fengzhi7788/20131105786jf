@@ -34,6 +34,14 @@ class teamViewController: UIViewController {
     @IBAction func save2(sender: UIButton) {
         save1()
     }
+    @IBAction func clean(sender: UIButton) {
+        clean()
+        save()
+    }
+    @IBAction func clean2(sender: UIButton) {
+        clean1()
+        save1()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,6 +67,24 @@ class teamViewController: UIViewController {
     //    }
     
     //从SQLite加载数据
+    func clean()
+    {
+        A1.text = ""
+        B1.text = ""
+        A2.text = ""
+        B2.text = ""
+        A3.text = ""
+        B3.text = ""
+        A4.text = ""
+        B4.text = ""
+        A5.text = ""
+        B5.text = ""
+    }
+    func clean1()
+    {
+        A6.text = ""
+        B6.text = ""
+    }
     func initUser() {
         let data = db.query("select * from nomalpeople12")
         let data1 = db.query("select * from turnpeople")
