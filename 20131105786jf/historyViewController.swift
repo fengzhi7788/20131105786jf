@@ -81,7 +81,7 @@ class historyViewController: UIViewController {
     
     @IBAction func del(sender: UIButton) {
         alertView.title="确定要历史记录吗"
-        //alertView.addButtonWithTitle("删除")
+        alertView.addButtonWithTitle("删除")
         alertView.addButtonWithTitle("确定")
         alertView.show()
  
