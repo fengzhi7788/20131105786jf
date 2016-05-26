@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var text2: UITextField!
 
+    @IBOutlet weak var stop: UIButton!
     @IBOutlet weak var name2: UITextField!
     @IBOutlet weak var text1: UITextField!
     var a:Int32=0
@@ -28,6 +29,11 @@ class ViewController: UIViewController {
         text1.text=("\(a)")
         saveUser()
     }
+    @IBAction func stop(sender: UIButton) {
+       let a=jishiViewController()
+        a.stoporcontinue(stop)
+    }
+
     @IBAction func three(sender: UIButton) {
         a=a+3
         text1.text=("\(a)")

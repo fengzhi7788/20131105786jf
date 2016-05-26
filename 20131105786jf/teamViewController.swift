@@ -26,6 +26,11 @@ class teamViewController: UIViewController {
     @IBOutlet weak var B5: UITextField!
     @IBOutlet weak var B6: UITextField!
 
+    var team1 = 0
+    
+    
+    
+    
     
     @IBAction func save(sender: UIButton) {
         save()
@@ -44,10 +49,6 @@ class teamViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
         
         //获取数据库实例
         db = SQLiteDB.sharedInstance()

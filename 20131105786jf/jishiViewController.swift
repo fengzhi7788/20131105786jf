@@ -11,7 +11,9 @@ import UIKit
 class jishiViewController: UIViewController {
     
     
- 
+    var db:SQLiteDB!
+    
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
@@ -21,7 +23,7 @@ class jishiViewController: UIViewController {
     @IBOutlet weak var sec: UITextField!
     //定义分 ＋秒数
     var x:Int32=0
-    var y:Int32=1
+    var y:Int32=0
     //总秒
     var leftTime:Int32 = 0
 
@@ -51,6 +53,7 @@ class jishiViewController: UIViewController {
             timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),userInfo:nil,repeats:true)
             a("倒计时开始，还有 \(leftTime) 秒..",tile: "倒计时开始")
             start=true
+            save()
         }
     }
     
@@ -79,6 +82,10 @@ class jishiViewController: UIViewController {
         }
     }
     @IBAction func stoporcontinue(sender: UIButton) {
+        stoporstart()
+            }
+    func stoporstart()
+    {
         if start==true
         {
             stoporcon.setTitle("继续", forState: UIControlState.Normal)
@@ -96,11 +103,12 @@ class jishiViewController: UIViewController {
             {
                 stoporcon.setTitle("暂停", forState: UIControlState.Normal)
                 timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),
-                userInfo:nil,repeats:true)
+                    userInfo:nil,repeats:true)
                 a("已经暂停，还有 \(leftTime) 秒...",tile: "到计时开始")
                 start=true
             }
         }
+
     }
     func tickDown()
     {
@@ -143,6 +151,30 @@ class jishiViewController: UIViewController {
         alertView.addButtonWithTitle("确定")
         alertView.show()
     }
+    func save()
+    {
+        let min = self.min.text!
+        let sec = self.sec.text!
+        let sql = "insert into time(min,sec) values('\(min)','\(sec)')"
+        print("sql: \(sql)")
+        let result = db.execute(sql)
+        print(result)
+    }
+    func initUser() {
+        let data = db.query("select * from time")
+
+        if data.count > 0 {
+            //获取最后一行数据显示
+            let user = data[data.count - 1]
+            min.text = user["min"] as? String
+            sec.text = user["sec"] as? String
+        }
+        //var x=leftTime
+        label1.text=String(leftTime/60)
+        label2.text=String(leftTime%60)
+
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -150,8 +182,14 @@ class jishiViewController: UIViewController {
         
 //        let bg=UIImage(named: "lanqiu.jpg")
 //        self.view.backgroundColor=UIColor(patternImage: bg!)
-
-
+        
+        
+        //获取数据库实例
+        db = SQLiteDB.sharedInstance()
+        //如果表还不存在则创建表（其中uid为自增主键）
+        db.execute("create table if not exists time(uid integer primary key,cout varchar(20),min varchar(20),sec varchar(20))")
+        
+        initUser()
     }
     
     

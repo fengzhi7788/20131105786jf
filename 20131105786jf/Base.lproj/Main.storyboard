@@ -458,12 +458,20 @@
                                     <action selector="three3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyu-Wl-vlo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBJ-A1-PfI">
+                                <rect key="frame" x="164" y="470" width="30" height="30"/>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZC-yn-cmY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="name1" destination="HZV-qS-xz9" id="BgL-cy-Evm"/>
                         <outlet property="name2" destination="UJt-lw-VOX" id="tEi-ln-WOp"/>
+                        <outlet property="stop" destination="tBJ-A1-PfI" id="9xf-UR-Ph0"/>
                         <outlet property="text1" destination="PpZ-p9-TPJ" id="cl3-Az-so8"/>
                         <outlet property="text2" destination="T2h-io-DlU" id="NCo-2S-ctt"/>
                     </connections>
@@ -621,6 +629,6 @@
         <image name="lanqiu.jpg" width="1024" height="885"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Ff-OV-y52"/>
+        <segue reference="WTh-Zt-b9Y"/>
     </inferredMetricsTieBreakers>
 </document>
