@@ -1,15 +1,15 @@
 //
-//  _0131105786jfTests.swift
-//  20131105786jfTests
+//  _0131105786fzjifenqiTests.swift
+//  20131105786fzjifenqiTests
 //
-//  Created by fz on 16/5/5.
+//  Created by fz on 16/6/20.
 //  Copyright © 2016年 fz. All rights reserved.
 //
 
 import XCTest
-@testable import _0131105786jf
+@testable import _0131105786fzjifenqi
 
-class _0131105786jfTests: XCTestCase {
+class _0131105786fzjifenqiTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

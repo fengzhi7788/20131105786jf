@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEF490621CDAEA810075810F"
-               BuildableName = "20131105786jf.app"
-               BlueprintName = "20131105786jf"
-               ReferencedContainer = "container:20131105786jf.xcodeproj">
+               BlueprintIdentifier = "BE2E6CDC1D183079004A0B71"
+               BuildableName = "20131105786fzjifenqi.app"
+               BlueprintName = "20131105786fzjifenqi"
+               ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEF490761CDAEA810075810F"
-               BuildableName = "20131105786jfTests.xctest"
-               BlueprintName = "20131105786jfTests"
-               ReferencedContainer = "container:20131105786jf.xcodeproj">
+               BlueprintIdentifier = "BE2E6CF01D183079004A0B71"
+               BuildableName = "20131105786fzjifenqiTests.xctest"
+               BlueprintName = "20131105786fzjifenqiTests"
+               ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEF490811CDAEA810075810F"
-               BuildableName = "20131105786jfUITests.xctest"
-               BlueprintName = "20131105786jfUITests"
-               ReferencedContainer = "container:20131105786jf.xcodeproj">
+               BlueprintIdentifier = "BE2E6CFB1D183079004A0B71"
+               BuildableName = "20131105786fzjifenqiUITests.xctest"
+               BlueprintName = "20131105786fzjifenqiUITests"
+               ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEF490621CDAEA810075810F"
-            BuildableName = "20131105786jf.app"
-            BlueprintName = "20131105786jf"
-            ReferencedContainer = "container:20131105786jf.xcodeproj">
+            BlueprintIdentifier = "BE2E6CDC1D183079004A0B71"
+            BuildableName = "20131105786fzjifenqi.app"
+            BlueprintName = "20131105786fzjifenqi"
+            ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEF490621CDAEA810075810F"
-            BuildableName = "20131105786jf.app"
-            BlueprintName = "20131105786jf"
-            ReferencedContainer = "container:20131105786jf.xcodeproj">
+            BlueprintIdentifier = "BE2E6CDC1D183079004A0B71"
+            BuildableName = "20131105786fzjifenqi.app"
+            BlueprintName = "20131105786fzjifenqi"
+            ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEF490621CDAEA810075810F"
-            BuildableName = "20131105786jf.app"
-            BlueprintName = "20131105786jf"
-            ReferencedContainer = "container:20131105786jf.xcodeproj">
+            BlueprintIdentifier = "BE2E6CDC1D183079004A0B71"
+            BuildableName = "20131105786fzjifenqi.app"
+            BlueprintName = "20131105786fzjifenqi"
+            ReferencedContainer = "container:20131105786fzjifenqi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -10,11 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     var db:SQLiteDB!
-
+    
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var text2: UITextField!
-
-    @IBOutlet weak var stop: UIButton!
+    var alertView:UIAlertView!
     @IBOutlet weak var name2: UITextField!
     @IBOutlet weak var text1: UITextField!
     var a:Int32=0
@@ -29,11 +28,6 @@ class ViewController: UIViewController {
         text1.text=("\(a)")
         saveUser()
     }
-    @IBAction func stop(sender: UIButton) {
-       let a=jishiViewController()
-        a.stoporcontinue(stop)
-    }
-
     @IBAction func three(sender: UIButton) {
         a=a+3
         text1.text=("\(a)")
@@ -69,6 +63,11 @@ class ViewController: UIViewController {
         y=(text2.text! as NSString).intValue
         a=x
         b=y
+        alertView = UIAlertView()
+        alertView.message = "非常抱歉，由于系统原因意外退出，现在您可继续使用"
+        alertView.title = "Sorry"
+        alertView.addButtonWithTitle("确定")
+        alertView.show()
         
     }
     override func viewDidLoad() {
@@ -85,25 +84,27 @@ class ViewController: UIViewController {
     }
     
     //点击保存
-//    @IBAction func saveClicked(sender: AnyObject) {
-//        saveUser()
-//    }
+    //    @IBAction func saveClicked(sender: AnyObject) {
+    //        saveUser()
+    //    }
     
     //从SQLite加载数据
     func initUser() {
+        
+
         let data = db.query("select * from score")
         let data1 = db.query("select * from name")
         if data.count > 0 {
             //获取最后一行数据显示
             let user = data[data.count - 1]
-            text1.text = user["Ascore"] as? String
-            text2.text = user["Bscore"] as? String
+            text1?.text = user["Ascore"] as? String
+            text2?.text = user["Bscore"] as? String
         }
         if data1.count > 0 {
             //获取最后一行数据显示
             let user2 = data1[data1.count - 1]
-            name1.text = user2["Aname"] as? String
-            name2.text = user2["Bname"] as? String
+            name1?.text = user2["Aname"] as? String
+            name2?.text = user2["Bname"] as? String
         }
     }
     
@@ -127,8 +128,8 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     
-
+    
+    
 }
 

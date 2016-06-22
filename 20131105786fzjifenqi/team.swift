@@ -8,7 +8,7 @@
 
 import UIKit
 
-class teamViewController: UIViewController {
+class team: UIViewController {
     var db:SQLiteDB!
     
     
@@ -25,7 +25,7 @@ class teamViewController: UIViewController {
     @IBOutlet weak var B4: UITextField!
     @IBOutlet weak var B5: UITextField!
     @IBOutlet weak var B6: UITextField!
-
+    
     var team1 = 0
     
     
@@ -120,7 +120,7 @@ class teamViewController: UIViewController {
         print("sql: \(sql2)")
         let result = db.execute(sql2)
         print(result)
-
+        
     }
     func save() {
         let Aname1 = self.A1.text!

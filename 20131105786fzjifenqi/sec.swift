@@ -8,7 +8,7 @@
 
 import UIKit
 
-class jishiViewController: UIViewController {
+class sec: UIViewController {
     
     
     var db:SQLiteDB!
@@ -26,13 +26,13 @@ class jishiViewController: UIViewController {
     var y:Int32=0
     //总秒
     var leftTime:Int32 = 0
-
+    
     var timer:NSTimer!
-
+    
     var alertView:UIAlertView!
-  
+    
     var start=false
-
+    
     
     
     @IBAction func start(sender: UIButton) {
@@ -53,6 +53,8 @@ class jishiViewController: UIViewController {
             timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1),target:self,selector:Selector("tickDown"),userInfo:nil,repeats:true)
             a("倒计时开始，还有 \(leftTime) 秒..",tile: "倒计时开始")
             start=true
+            
+            //var emptyArray: [Int32] = []
             save()
         }
     }
@@ -83,7 +85,7 @@ class jishiViewController: UIViewController {
     }
     @IBAction func stoporcontinue(sender: UIButton) {
         stoporstart()
-            }
+    }
     func stoporstart()
     {
         if start==true
@@ -108,7 +110,7 @@ class jishiViewController: UIViewController {
                 start=true
             }
         }
-
+        
     }
     func tickDown()
     {
@@ -121,8 +123,8 @@ class jishiViewController: UIViewController {
             {
                 timer.invalidate()
             }
-
-           
+            
+            
             if y==0&&x>0
             {
                 x=x-1
@@ -136,7 +138,7 @@ class jishiViewController: UIViewController {
             label1.text=String(x/60)
             label2.text=String(y)
             
-          
+            
         }else
         {
             timer.invalidate()
@@ -162,7 +164,7 @@ class jishiViewController: UIViewController {
     }
     func initUser() {
         let data = db.query("select * from time")
-
+        
         if data.count > 0 {
             //获取最后一行数据显示
             let user = data[data.count - 1]
@@ -172,16 +174,16 @@ class jishiViewController: UIViewController {
         //var x=leftTime
         label1.text=String(leftTime/60)
         label2.text=String(leftTime%60)
-
+        
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         alertView = UIAlertView()
         
-//        let bg=UIImage(named: "lanqiu.jpg")
-//        self.view.backgroundColor=UIColor(patternImage: bg!)
+        //        let bg=UIImage(named: "lanqiu.jpg")
+        //        self.view.backgroundColor=UIColor(patternImage: bg!)
         
         
         //获取数据库实例
@@ -198,15 +200,15 @@ class jishiViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

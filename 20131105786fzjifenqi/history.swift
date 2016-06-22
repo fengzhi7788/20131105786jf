@@ -8,14 +8,14 @@
 
 import UIKit
 
-class historyViewController: UIViewController {
+class history: UIViewController {
     var db:SQLiteDB!
     
     @IBOutlet weak var text: UITextView!
     var alertView:UIAlertView!
     
     override func viewDidLoad() {
-         alertView = UIAlertView()
+        alertView = UIAlertView()
         
         
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class historyViewController: UIViewController {
             let score1 = score[a]
             text.text! += String(score1["uid"]!)+" "+"A队得分："+String(score1["Ascore"]!)+"  "+"B队得分："+String(score1["Bscore"]!)+"\n"
         }
- 
+        
     }
     func initteam()
     {
@@ -69,7 +69,7 @@ class historyViewController: UIViewController {
     {
         text.text=""
         let people=db.query("select * from turnpeople")
-         text.text! += "历史记录:"+String(people.count)+"\n"
+        text.text! += "历史记录:"+String(people.count)+"\n"
         for var a=0;a<people.count;a++
         {
             let user1 = people[a]
@@ -84,15 +84,15 @@ class historyViewController: UIViewController {
         alertView.addButtonWithTitle("删除")
         alertView.addButtonWithTitle("确定")
         alertView.show()
- 
-       // if alertView.clipsToBounds
+        
+        // if alertView.clipsToBounds
         //{
         let x=db.query("delete from score")
         db.query("delete from name")
         db.query("delete from nomalpeople12")
         db.query("delete from turnpeople")
         text.text = "历史记录:"+String(x.count)+"\n"
-
+        
         //}
     }
     func inituser()
@@ -110,5 +110,5 @@ class historyViewController: UIViewController {
         
     }
     
-
+    
 }
